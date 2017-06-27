@@ -10,7 +10,7 @@ This is a small python script that pushes messages from configured Mattermost ch
 How does it work?
 -----------------
 
-The script checks for new Mattermost messages and send them to Slack. It uses a file named 'timestamps.txt' where it stores timestamps for last messages. 
+The script checks for new Mattermost messages every 10 seconds and sends new messages to Slack. It uses a file named 'timestamps.txt' where it stores timestamps for last messages. 
 
 
 Installing and running the script
@@ -18,7 +18,7 @@ Installing and running the script
 
 Install requirements from 'requirements.txt' with 'pip innstall -r requirements.txt'.
 
-After dependencies are installed, update the settings dict with your credentials and run it with 'python slackmatter.py'.
+After dependencies are installed, update the 'SETTINGS' dict with your credentials and run it with 'python slackmatter.py'.
 
 Issues
 ------
